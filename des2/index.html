@@ -1,106 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Demo — Layout Responsive</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive con CSS Grid</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="#" class="navbar__brand">Estudio Verde</a>
-      <button class="navbar__toggle" aria-label="Abrir menú">☰</button>
-      <ul class="navbar__links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#portafolio">Portafolio</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="contenedor">
 
-  <section class="hero">
-    <div class="hero__inner">
-      <div class="hero__content">
-        <h1>Diseñamos espacios que respiran</h1>
-        <p>Un pequeño estudio dedicado a crear experiencias visuales claras, cálidas y funcionales.</p>
-        <a href="#contacto" class="btn">Hablemos</a>
-      </div>
-      <div class="hero__media"></div>
-    </div>
-  </section>
+        <header class="header">
+            <h1>HEADER</h1>
+        </header>
 
-  <section class="section" id="servicios">
-    <div class="section__header">
-      <h2>Lo que hacemos</h2>
-      <p>Tres áreas donde ponemos todo nuestro cuidado y atención al detalle.</p>
-    </div>
-    <div class="cards-grid">
-      <div class="card">
-        <div class="card__icon"></div>
-        <h3>Identidad visual</h3>
-        <p>Marcas con personalidad propia, pensadas para durar.</p>
-      </div>
-      <div class="card">
-        <div class="card__icon"></div>
-        <h3>Diseño web</h3>
-        <p>Sitios rápidos, accesibles y adaptados a cualquier pantalla.</p>
-      </div>
-      <div class="card">
-        <div class="card__icon"></div>
-        <h3>Ilustración</h3>
-        <p>Piezas originales que dan carácter a cada proyecto.</p>
-      </div>
-    </div>
-  </section>
+        <aside class="aside">
+            <h2>ASIDE</h2>
 
-  <section class="section section--alt" id="portafolio">
-    <div class="section__header">
-      <h2>Algunos trabajos</h2>
-      <p>Una muestra de proyectos recientes.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-grid__item gallery-grid__item--wide"></div>
-      <div class="gallery-grid__item"></div>
-      <div class="gallery-grid__item gallery-grid__item--tall"></div>
-      <div class="gallery-grid__item"></div>
-      <div class="gallery-grid__item"></div>
-    </div>
-  </section>
+            <ul>
+                <li>Inicio</li>
+                <li>Servicios</li>
+                <li>Portafolio</li>
+                <li>Contacto</li>
+            </ul>
+        </aside>
 
-  <section class="section contact" id="contacto">
-    <div class="contact__inner">
-      <div class="contact__info">
-        <h2>Conversemos</h2>
-        <p>Cuéntanos sobre tu proyecto y te responderemos en menos de 48 horas.</p>
-        <p>hola@estudioverde.com</p>
-      </div>
-      <div class="contact__form">
-        <form>
-          <input type="text" placeholder="Nombre" required>
-          <input type="email" placeholder="Correo" required>
-          <textarea placeholder="Cuéntanos sobre tu proyecto"></textarea>
-          <button type="submit" class="btn">Enviar mensaje</button>
-        </form>
-      </div>
-    </div>
-  </section>
+        <main class="main">
+            <h2>MAIN</h2>
 
-  <footer class="site-footer">
-    <div class="footer__inner">
-      <p>© 2026 Estudio Verde</p>
-      <div class="footer__links">
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
+            <p>
+                Este es el contenido principal del sitio web.
+                El diseño utiliza CSS Grid para distribuir
+                las secciones Header, Aside, Main y Footer.
+            </p>
 
-  <script>
-    document.querySelector('.navbar__toggle').addEventListener('click', () => {
-      document.querySelector('.navbar__links').classList.toggle('is-open');
-    });
-  </script>
+            <div class="cards">
+                <div class="card">Tarjeta 1</div>
+                <div class="card">Tarjeta 2</div>
+                <div class="card">Tarjeta 3</div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <h2>FOOTER</h2>
+        </footer>
+
+    </div>
+
 </body>
+
 </html>
